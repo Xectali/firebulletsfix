@@ -38,7 +38,7 @@ public void OnPluginStart()
 
 	CloseHandle(gameData);
 
-	g_hWeapon_ShootPosition = DHookCreate(offset, HookType_Entity, ReturnType_Int, ThisPointer_CBaseEntity);
+	g_hWeapon_ShootPosition = DHookCreate(offset, HookType_Entity, ReturnType_Vector, ThisPointer_CBaseEntity);
 
 	if (g_hWeapon_ShootPosition == INVALID_HANDLE)
 	{
